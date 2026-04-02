@@ -11,9 +11,13 @@ Proyek ini bertujuan untuk membangun model **Machine Learning** yang dapat mempr
 ---
 
 ## 📈 Analisis Visual (Power BI)
-Sebelum masuk ke tahap modeling, analisis deskriptif dilakukan menggunakan Power BI untuk memahami profil demografis nasabah (pekerjaan, status pernikahan, pendidikan) serta tren bulanan.
+Analisis deskriptif dilakukan untuk memahami profil nasabah. Anda dapat melihat dashboard interaktif melalui file `.pbix` di folder dashboard.
 
-![Dashboard Power BI](dashboard_powerbi.png)
+**Preview Dashboard:**
+![Dashboard Page 1](images/Bank_1.jpg)
+![Dashboard Page 2](images/Bank_2.jpg)
+
+> 📂 **File Power BI:** [Download Bank Marketing.pbix](dashboard/Bank%20Marketing.pbix)
 
 ---
 
@@ -47,6 +51,21 @@ Berdasarkan pengujian pada data uji (*test set*), model Random Forest menghasilk
 **Interpretasi:**
 *   Model memiliki **Akurasi 89%**, namun tantangan terdapat pada *Recall* kelas 1 (Yes). Hal ini dikarenakan jumlah sampel nasabah yang berlangganan jauh lebih sedikit dibandingkan yang tidak.
 *   Meskipun demikian, model sangat kuat dalam menyaring nasabah yang **tidak potensial** (F1-Score 0.94), yang sangat berguna untuk menghemat biaya operasional marketing.
+
+---
+## 🧪 Hasil Analisis Python (EDA & Modeling)
+
+Berikut adalah beberapa temuan kunci dari analisis data mining:
+
+### 1. Distribusi Target & Fitur
+![Distribusi Target](images/distribusi%20target.png)
+![Pengaruh Durasi](images/pengaruh%20durasi%20telepon.png)
+
+### 2. Performa Model
+![Confusion Matrix](images/confusion%20matrix.png)
+
+### 3. Fitur Paling Berpengaruh
+![Feature Importance](images/feature%20importance.png)
 
 ---
 
